@@ -1,5 +1,6 @@
 var mysql = require("mysql");
-var express = require("express");
+var cTable = require("console.table")
+var inquirer = require("inquirer");
 
 var connection = mysql.createConnection({
   host: "localhost",
@@ -28,3 +29,7 @@ function afterConnection() {
     connection.end();
   });
 }
+
+inquirer.prompt (["what?"], function( ){
+
+})
